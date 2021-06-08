@@ -1,0 +1,83 @@
+body {
+    background-color: #FBF2E9;
+}
+
+div.container {
+    margin-left: 20%;
+    margin-top: 7%;
+}
+
+#cards-table {
+    border-top: 2px solid black;
+    border-spacing: 20px 10px;
+}
+
+.title-block {
+    margin-bottom: 2%;
+}
+
+.title-block span {
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(88, 0, 0);
+}
+
+#start-finish {
+    cursor: pointer;
+    margin-left: 50%;
+    background-color: burlywood;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.freezed {
+    opacity: 0.5;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+
+div.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+ }
+ 
+ div.modalDialog h3 {
+    margin-left: 30%;
+ }
+ 
+ div.modalDialog p {
+    margin-left: 25%;
+ }
+ 
+ div.modalDialog:target {
+     display: block;
+     pointer-events: auto;
+ }
+ 
+ div.modalDialog > div {
+     width: 400px;
+     position: relative;
+     margin: 10% auto;
+     padding: 5px 20px 13px 20px;
+     border-radius: 3px;
+     background: #fff;
+     background: -moz-linear-gradient(#fff, #FDEEFF);
+     background: -webkit-linear-gradient(#fff, #FDEEFF);
+     background: -o-linear-gradient(#fff, #FDEEFF);
+ }
+
